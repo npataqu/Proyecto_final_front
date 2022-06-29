@@ -1,0 +1,644 @@
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+
+}
+
+/*Estilo header primer rectangulo*/
+
+.header-primer-rectangulo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6%;
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 60px;
+    background-color: #ffffff;
+}
+
+.header-primer-rectangulo img {
+    width: 22.8%;
+    height: 30px;
+}
+
+.header-primer-rectangulo ul {
+    display: flex;
+}
+
+.header-primer-rectangulo li {
+    list-style: none;
+    margin-right: 14px;
+    margin-left: 14px;
+    margin-top: -15px;
+}
+
+.header-primer-rectangulo button {
+       border-radius: 25px;
+    color: #ffffff;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #F3603B;
+    height: 44px;
+    width: 134px;
+    margin-top: -15px;
+}
+
+#boton-get :hover{
+    cursor: pointer;
+    box-shadow: 0em 0.6rem 0.5rem 0 rgb(0 0 0 / 25%);
+    opacity: 80%;
+
+}
+
+#probando-hover :hover{
+    box-shadow: 0em 0.6rem 0.5rem 0 rgb(0 0 0 / 25%);
+    cursor: pointer;
+    opacity: 80%;
+}
+
+
+
+/*En esta sesion se encuentran las media queery para el header*/
+@media (max-width: 375px) {
+    .header-primer-rectangulo ul {
+        display: none;
+    }
+
+    .header-primer-rectangulo button {
+        display: none;
+    }
+
+}
+
+/*media queri para ocultar el menu hamburguesa*/
+@media (min-width:375px) {
+
+    #ocultar-menu-hamburguer {
+        display: none;
+    }
+}
+
+@media (max-width:375px) {
+    #ocultar-menu-hamburguer {
+        display: block;
+        position: relative;
+        left: 88px;
+        width: 29px;
+        height: 22px;
+    }
+}
+/*Estilos para la columna bring everyone*/
+.columna-bring-everione {
+    width: 41%;
+    height: 490px;
+    margin-left: 4%;
+
+}
+
+.columna-bring-everione #bring {
+    font-size: 58px;
+    font-weight: bold;
+    padding: 0px;
+    margin-bottom: 30px;
+
+}
+
+.columna-bring-everione p {
+    font-size: 17px;
+    text-align: left;
+    padding-bottom: 25px;
+}
+
+.columna-bring-everione button {
+    border-radius: 25px;
+    color: #ffffff;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #F3603B;
+    height: 44px;
+    width: 134px;
+}
+
+/*Estilos para la columna derecha ilustración*/
+.columna-imagen-derecha {
+    width: 43.5%;
+    height: 500px;
+    margin-left: 4%;
+
+}
+
+.ilustracion {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/*En esta secion se encuentran las media queri para las columnas*/
+@media (max-width: 375px) {
+    .ilustracion {
+        flex-direction: column-reverse;
+        width: 700px;
+    }
+
+    .columna-imagen-derecha img {
+        width: 90%;
+    }
+
+    .columna-imagen-derecha {
+        height: 260px;
+    }
+
+    .columna-bring-everione #bring {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .columna-bring-everione p {
+        text-align: center;
+    }
+
+    .columna-bring-everione button {
+        position: relative;
+        left: 25%;
+    }
+
+    .columna-bring-everione {
+        height: 400px;
+    }
+}
+
+/*Estilo para la columna what diferent*/
+.columna-what-diferent {
+    width: 41%;
+    height: 280px;
+    margin-left: 4%;
+    font-size: 16px;
+  
+}
+
+.columna-what-diferent h3 {
+    font-size: 2.25em;
+    width: 450px;
+}
+
+.columna-what-diferent p {
+    font-size: 1em;
+    text-align: left;
+    width: 21.8em;
+}
+
+.lista-columna-derecha {
+    width: 45%;
+    height: 457px;
+    margin-left: 7%;
+    font-size: 16px;
+   }
+
+.lista-columna-derecha div {
+    width: 410px;
+    margin-left: 45px;
+}
+
+.lista-columna-derecha li {
+    list-style: none;
+    position: relative;
+    bottom: 6px;
+}
+
+/*en este espacio le estoy dando estilo a los span que utilice como viñetas*/
+.lista-columna-derecha span {
+    color: #ffffff;
+    width: 61px;
+    height: 33px;
+    position: relative;
+    right: 83px;
+    top: 20px;
+    background-color: #F3603B;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.lista-columna-derecha p {
+    margin-bottom: 0px;
+    margin-top: 3 px;
+}
+
+.contenedor-lista-ordenada {
+    display: flex;
+    align-items: flex-start;
+}
+
+/*query para la columna what y lista ordenada*/
+
+@media (max-width: 375px) {
+    .contenedor-lista-ordenada {
+        flex-direction: column;
+        width: 700px;
+    }
+
+    .lista-columna-derecha {
+        height: 536px;
+        margin-left: 0%;
+        width: 317px;
+    }
+
+    .lista-columna-derecha div {
+        margin-left: 0px;
+        width: 300px;
+    }
+
+    .lista-columna-derecha span {
+        width: 44px;
+        height: 30px;
+        right: 31px;
+        top: 23px;
+        z-index: 2;
+    }
+
+    .lista-columna-derecha li{
+        background-color:rgb(255 239 234);
+        width: 336px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        text-align: center;
+        font-weight: bold;
+        z-index: 1;
+    }
+
+    .columna-what-diferent {
+        width: 140px;
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .columna-what-diferent h3 {
+        width: 320px;
+        font-size: 2em;
+    }
+}
+
+/*estilo para las cards de personajes, anisha, ali, richard*/
+.titulo-cards {
+    display: flex;
+    justify-content: center;
+    font-size: 2.4em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.contenedor-card-anisha {
+    background-color: #fafafa;
+    width: 30%;
+    text-align: center;
+    border: solid 2px white;
+}
+
+#imagen-anisha {
+    position: relative;
+    bottom: 60px;
+}
+
+.contenedor-card-ali {
+    background-color: #fafafa;
+    width: 30%;
+    text-align: center;
+    border: solid 2px white;
+}
+
+#imagen-ali {
+    position: relative;
+    bottom: 60px;
+}
+
+.contenedor-card-richard {
+    background-color: #fafafa;
+    width: 30%;
+    text-align: center;
+    border: solid 2px white;
+}
+
+#imagen-richard {
+    position: relative;
+    bottom: 60px;
+}
+
+.contenedor-cards {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/*media queri para las cards*/
+@media (max-width: 375px) {
+
+    .titulo-cards {
+        width: 100%;
+        font-size: 1.5em;
+        text-align: center;
+
+    }
+
+    .contenedor-card-richard {
+        display: none;
+    }
+
+    .contenedor-card-anisha {
+        display: none;
+    }
+
+    .contenedor-card-ali {
+        width: 100%;
+    }
+
+    #imagen-ali {
+        height: 90px;
+        bottom: 39px;
+    }
+}
+
+/*simulacion carrusel*/
+.simulado-carrusel div {
+    border-radius: 50px;
+    border: solid 1px #f3613c;
+    width: 3px;
+    height: 3px;
+}
+
+.simulado-carrusel {
+    display: none;
+    justify-content: center;
+
+}
+
+#simulado1 {
+    background-color: #f3613c;
+}
+
+/*media query elimando el carrusel para revisar*/
+
+@media (max-width: 375px) {
+    .simulado-carrusel {
+        display: flex;
+        margin-top: 30px;
+    }
+}
+
+/*estilo boton personajes*/
+.boton-personajes button {
+    border-radius: 25px;
+    color: #ffffff;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #F3603B;
+    height: 44px;
+    width: 134px;
+    margin-top: 40px;
+}
+
+.boton-personajes {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-personajes :hover {
+    cursor: pointer;
+    box-shadow: 0em 0.6rem 0.5rem 0 rgb(0 0 0 / 25%);
+    opacity: 80%;
+}
+
+/*estilo rectangulo naranja de cierre*/
+.rectangulo-naranja-final {
+    background-color: #f3613c;
+    height: 224px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+
+}
+
+.rectangulo-naranja-final p {
+    color: #ffffff;
+    font-size: 2.5em;
+    width: 25%;
+    font-weight: bold;
+}
+
+.rectangulo-naranja-final button {
+    cursor: pointer;
+    border-radius: 25px;
+    color: #F3603B;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #ffffff;
+    height: 44px;
+    width: 12%;
+    margin-top: 8%;
+    border: none;
+    box-shadow: 0em 0.6rem 0.5rem 0 rgb(0 0 0 / 25%);
+    
+}
+
+
+
+/*media query para el rectangulo naranja final*/
+
+@media (max-width: 375px) {
+    .rectangulo-naranja-final {
+        display: flex;
+        flex-direction: column;
+        height: 280px;
+        border: solid 2px red;
+        align-items: center;
+    }
+
+    .rectangulo-naranja-final p {
+        font-size: 1.5em;
+        width: 90%;
+        text-align: center;
+    }
+    .rectangulo-naranja-final button {
+        width: 40%;
+        box-shadow: none;
+    }
+}
+
+/*estilo footer*/
+footer {
+    background-color: #131326;
+    height: 250px;
+    display: flex;
+}
+
+.contenedor-iconos {
+    display: flex;
+    width: 18%;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 4%;
+}
+
+.contenedor-iconos img {
+    padding: 2%;
+}
+
+#barra-footer {
+    margin-top: 2%;
+
+}
+
+.navegacion-footer {
+    color: #ffffff;
+    list-style: none;
+    margin-top: 20%;
+}
+
+.navegacion-footer li {
+    margin-bottom: 40%;
+    width: 80px;
+
+}
+
+.tercera-columna-footer {
+    color: #ffffff;
+    margin-left: 20%;
+    margin-top: 2%;
+    width: 180px;
+}
+
+.tercera-columna-footer :hover{
+    color:rgb(242, 95, 58);
+    cursor: pointer;
+}
+
+/*estilo para el formulario dentro del footer*/
+.formulario {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+.formulario form {
+    width: 80%;
+    display: flex;
+}
+
+label {
+    color: red;
+    font-size: 0.8em;
+}
+
+.primer-boton {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+input#update {
+    border-radius: 50px;
+    width: 100%;
+    padding: 4%;
+}
+
+.boton-footer {
+    width: 30%;
+    background-color: #F3603B;
+    margin-left: 10%;
+    border-radius: 50px;
+    height: 30px;
+    
+}
+.boton-footer button {
+    margin-left: 32%;
+    margin-top: 4%;
+    color: #ffffff;
+    background-color: #F3603B;
+    border: none;
+    font-size: 1em;
+    
+}
+
+.boton-footer :hover{
+    cursor: pointer;
+    opacity: 50%;
+}
+
+span {
+    display: flex;
+    color: white;
+    align-items: flex-end;
+}
+
+/*media query para el footer*/
+
+@media (max-width: 375px) {
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contenedor-iconos {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 72px;
+        margin-bottom: 4px;
+    }
+
+    .iconos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .iconos img {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .formulario {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        position: relative;
+        top: 196px
+    }
+
+    .navegacion-footer li {
+        font-size: 16px;
+        width: 30%;
+        height: 26px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .tercera-columna-footer {
+        font-size: 16px;
+        width: 30%;
+        height: 185px;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        left: 220px;
+        top: 192px;
+    }
+
+    label {
+        font-size: 0.5em;
+    }
+
+    span {
+        font-size: 8px;
+        position: relative;
+        top: 433px;
+        width: 393px;
+        display: flex;
+        justify-content: center;
+    }
+}
